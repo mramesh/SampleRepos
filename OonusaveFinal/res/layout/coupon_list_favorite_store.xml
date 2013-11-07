@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+
+
+		<TextView android:id="@+id/titleBarText"
+			android:layout_marginTop="20dip" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="20px"
+			android:textColor="@color/titlebarTextColor" android:text="Coupon List"
+			android:background="@drawable/title_bar" />
+
+
+		<!--
+			<TextView android:id="@+id/titleBarText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="20px"
+			android:textColor="#ffffff" android:text="Coupons List"
+			android:background="@drawable/title_bar" /> <LinearLayout
+			android:background="@drawable/search_bg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" > <EditText
+			android:id="@+id/searchText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="2dip"
+			android:layout_marginLeft="2dip" android:layout_marginRight="2dip"
+			android:layout_marginBottom="2dip" android:singleLine="true" >
+			</EditText> </LinearLayout>
+		-->
+		<ListView android:id="@+id/android:list"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="1dip" />
+
+	</LinearLayout>
+
+	<!--
+		<com.mocansa.Toolbar android:layout_width="fill_parent"
+		android:layout_height="60dip" android:layout_gravity="bottom"
+		app:textViewId="option4" />
+	-->
+</FrameLayout>
+

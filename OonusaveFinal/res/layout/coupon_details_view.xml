@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:scrollbars="none" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/main_bg">
+
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+		xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+		>
+
+
+		<ImageView android:id="@+id/titleImg" android:layout_width="125dip" 
+			android:layout_height="125dip" android:layout_marginLeft="10dip" android:layout_marginTop="20dip" />
+
+		<TextView android:id="@+id/couponStoreName" android:textSize="20dp"
+			android:textColor="#ffffff" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_toRightOf="@id/titleImg"
+			android:layout_marginLeft="20dip" android:layout_marginTop="20dip" />
+
+		<TextView android:id="@+id/title" android:textSize="15dp"
+			android:textColor="#ffffff" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/couponStoreName"
+			android:layout_toRightOf="@id/titleImg" android:layout_marginLeft="20dip" />
+
+
+		<!--
+			<ImageView android:id="@+id/desc_bg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/description_bg"/>
+		-->
+
+		<ScrollView android:layout_width="fill_parent" android:id="@+id/descTextLayout"
+			android:layout_marginLeft="5dip" android:layout_marginTop="10dip"
+			android:layout_marginRight="5dip" android:layout_centerInParent="true"
+			android:background="@drawable/description_bg" android:layout_height="160dip"
+			android:scrollbars="none" android:layout_below="@id/title">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView android:id="@+id/descText" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#000000"
+					android:textSize="18dip" android:text="Description"
+					android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+			</LinearLayout>
+		</ScrollView>
+
+		<Button android:id="@+id/use_coupon_btn"
+			android:layout_marginTop="10dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:layout_centerInParent="true" android:layout_below="@id/descTextLayout"
+			android:background="@drawable/use_this_coupon_button" />
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_marginTop="10dip"
+			android:layout_width="wrap_content" android:layout_centerInParent="true"
+			android:layout_height="wrap_content" android:layout_below="@id/use_coupon_btn">
+
+			<TextView android:id="@+id/exclusiveCouponText" android:textSize="20dp"
+			android:textColor="#ffffff" android:layout_width="wrap_content" android:visibility="gone"
+			android:layout_height="wrap_content" android:layout_below="@id/couponStoreName"
+			/>
+
+			<Button android:id="@+id/add_to_wallet_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/add_to_wallet_button" />
+
+			<Button android:id="@+id/location_btn" android:layout_width="wrap_content" android:layout_marginLeft="2dip"
+				android:layout_height="wrap_content" android:background="@drawable/location_button" />
+
+			<Button android:id="@+id/tell_a_friend_btn" android:layout_marginLeft="2dip"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/tell_a_friend_button" />
+
+		</LinearLayout>
+
+
+
+		<!--
+			<com.mocansa.Toolbar android:layout_width="fill_parent"
+			android:layout_height="70dip" android:layout_gravity="bottom"
+			app:textViewId="option1"/>
+		-->
+	</RelativeLayout>
+</ScrollView>
+	

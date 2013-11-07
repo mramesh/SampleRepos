@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<TextView android:id="@+id/titleBarTextView"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="18dip" android:textColor="@color/titlebarTextColor"
+			android:text="" android:background="@drawable/title_bar" />
+
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:background="@drawable/inbox_bg" android:orientation="vertical"
+			android:layout_marginBottom="20dip" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:layout_marginTop="10dip">
+
+
+
+			<ListView android:id="@+id/android:list" android:background="#ffffff"
+				android:layout_marginBottom="10dip" android:layout_marginTop="10dip" android:layout_marginLeft="2dip"
+			android:layout_marginRight="2dip" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+	<!--
+		<com.mocansa.Toolbar android:id="@+id/toolBar"
+		android:layout_width="fill_parent" android:layout_height="60dip"
+		android:layout_gravity="bottom" app:textViewId="option5" />
+	-->
+</FrameLayout>
+

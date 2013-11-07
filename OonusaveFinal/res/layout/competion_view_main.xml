@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_marginTop="2dip" android:layout_height="wrap_content"
+			android:background="@drawable/title_bar">
+			<TextView android:id="@+id/titleBarTextView"
+				android:layout_gravity="left" android:gravity="left"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="18dip" android:textColor="@color/titlebarTextColor"
+				android:text="Competition" />
+		</RelativeLayout>
+
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:id="@+id/topSaverLayout" android:layout_marginTop="20dip"
+			android:layout_height="wrap_content" android:background="@drawable/top_saverbg"
+			android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+
+			<ImageView android:id="@+id/image1" android:layout_width="80dip"
+				android:layout_height="80dip" android:src="@drawable/top_saver"
+				android:layout_centerVertical="true">
+			</ImageView>
+
+			<TextView android:id="@+id/title1" android:layout_toRightOf="@id/image1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16dip" android:textColor="#0066CC"
+				android:text="" android:layout_marginTop="2dip" android:textStyle="bold"/>
+
+			<TextView android:id="@+id/price1" android:layout_toRightOf="@id/image1"
+				android:layout_below="@id/title1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="12dip"
+				android:textColor="#009900" android:text="" />
+
+			<TextView android:id="@+id/desc1" android:layout_toRightOf="@id/image1"
+				android:layout_below="@id/price1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="10dip"
+				android:textColor="#000000" android:text="" />
+
+		</RelativeLayout>
+
+
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:id="@+id/topRecommentedLayout" android:layout_marginTop="10dip"
+			android:layout_height="wrap_content" android:background="@drawable/top_saverbg"
+			android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+
+
+			<ImageView android:id="@+id/image1" android:layout_width="80dip"
+				android:layout_height="80dip" android:src="@drawable/top_recommend"
+				android:layout_centerVertical="true">
+			</ImageView>
+			<TextView android:id="@+id/title2" android:layout_toRightOf="@id/image1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16dip" android:textColor="#0066CC"
+				android:text="" android:layout_marginTop="2dip" android:textStyle="bold"/>
+
+			<TextView android:id="@+id/price2" android:layout_toRightOf="@id/image1"
+				android:layout_below="@id/title2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="12dip"
+				android:textColor="#009900" android:text="" />
+
+			<TextView android:id="@+id/desc2" android:layout_toRightOf="@id/image1"
+				android:layout_below="@id/price2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="10dip"
+				android:textColor="#000000" android:text="" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:id="@+id/firstUserLayout" android:layout_marginTop="10dip"
+			android:layout_height="wrap_content" android:background="@drawable/top_saverbg"
+			android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+
+			<ImageView android:id="@+id/image1" android:layout_width="80dip"
+				android:layout_height="80dip" android:src="@drawable/first_use_coupons"
+				android:layout_centerVertical="true">
+			</ImageView>
+
+			<TextView android:id="@+id/title3" android:layout_toRightOf="@id/image1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16dip" android:textColor="#0066CC"
+				android:text="" android:layout_marginTop="2dip" android:textStyle="bold"/>
+
+			<TextView android:id="@+id/price3" android:layout_toRightOf="@id/image1"
+				android:layout_below="@id/title3" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="12dip"
+				android:textColor="#009900" android:text="" />
+
+			<TextView android:id="@+id/desc3" android:layout_toRightOf="@id/image1"
+				android:layout_below="@id/price3" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="10dip"
+				android:textColor="#000000" android:text="" />
+
+		</RelativeLayout>
+
+
+
+	</LinearLayout>
+
+
+<!-- 
+	<com.mocansa.Toolbar android:id="@+id/toolBar"
+		android:layout_width="fill_parent" android:layout_height="60dip"
+		android:layout_gravity="bottom" app:textViewId="option5" />
+		-->
+</FrameLayout>
+   

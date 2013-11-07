@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+
+		<TextView android:id="@+id/titleBarTextView"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="18dip" android:textColor="@color/titlebarTextColor"
+			android:text="Edit Profile" android:background="@drawable/title_bar" />
+
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip" android:scrollbars="none">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:orientation="vertical">
+
+				<EditText android:id="@+id/fname_text"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+
+				<EditText android:id="@+id/password_text" android:password="true"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+				<!--
+					<EditText android:id="@+id/lname_text"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+				-->
+
+				<EditText android:id="@+id/age_text" android:layout_height="wrap_content"
+					android:numeric="decimal" android:layout_width="fill_parent"
+
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+				<Spinner android:id="@+id/gender_spinner"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+
+
+				<!--
+					<EditText android:id="@+id/email_text"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+				-->
+
+				<!--
+					<EditText android:id="@+id/address1Text"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+
+					<EditText android:id="@+id/address2Text"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+				-->
+
+				<EditText android:id="@+id/postelCodeText"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:numeric="decimal" android:layout_centerHorizontal="true"
+					android:singleLine="true" />
+
+
+				<!-- <EditText android:id="@+id/state_text"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+-->
+
+
+				<!--
+					<EditText android:id="@+id/cityText"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+
+					<Spinner android:id="@+id/countrySpinner"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+				-->
+
+
+
+				<!--
+					<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"> <EditText
+					android:id="@+id/birthDateText" android:layout_width="200dip"
+					android:layout_height="wrap_content" android:singleLine="true" />
+					<Button android:id="@+id/btnSelectDate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/txtBithDate" android:text="..." />
+					</LinearLayout> <EditText android:id="@+id/mobileNoText"
+					android:numeric="decimal" android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+				-->
+
+
+
+				<!--
+					<EditText android:id="@+id/con_password_text"
+
+					android:password="true" android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+				-->
+
+				<Button android:id="@+id/submit_button" android:layout_width="wrap_content"
+					android:layout_gravity="right" android:layout_marginRight="10dip"
+					android:layout_marginTop="20dip" android:layout_height="wrap_content"
+					android:background="@drawable/submit" />
+
+				
+			</LinearLayout>
+
+		</ScrollView>
+
+
+	</LinearLayout>
+	
+	<!-- 
+	<com.mocansa.Toolbar android:id="@+id/toolBar"
+		android:layout_width="fill_parent" android:layout_height="60dip"
+		android:layout_gravity="bottom" app:textViewId="option5" />
+		-->
+
+
+</FrameLayout>

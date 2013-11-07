@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<TextView android:id="@+id/titleBarTextView"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="20dip" android:textColor="@color/titlebarTextColor" android:text=" Feedback"
+			android:background="@drawable/title_bar" />
+
+		
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginRight="10dip"
+				android:layout_marginLeft="10dip" android:layout_marginBottom="10dip"
+				android:layout_marginTop="10dip" android:orientation="vertical"
+				android:background="@drawable/feedback_bg">
+
+				<TextView android:id="@+id/rateThisAppTextView"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="20dip" android:layout_marginLeft="20dip"
+					android:layout_marginRight="20dip" android:textSize="20dip"
+					android:gravity="left" android:textColor="#ffffff" android:textStyle="bold"
+					android:text=" Rate this App" android:background="@drawable/feedback_titlebg" />
+
+				<!--
+					<LinearLayout android:layout_width="fill_parent"
+					android:layout_marginLeft="2dip" android:layout_marginTop="2dip"
+					android:layout_marginRight="2dip"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:background="@drawable/store_details_topbg">
+				-->
+				<TextView android:id="@+id/rateThisAppDescTextView"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="20dip" android:layout_marginTop="10dip"
+					android:layout_marginRight="20dip" android:textColor="#ffffff"
+					android:layout_gravity="center" android:textSize="18dip"
+					android:text="Click here to apperctiate us by rating this application." />
+
+				<Button android:id="@+id/rate_app_button"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginTop="20px" android:layout_gravity="center"
+					android:background="@drawable/rate_this_app_btn" />
+
+
+				<TextView android:id="@+id/reportABugTextView"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="20dip" android:layout_marginLeft="20dip"
+					android:layout_marginRight="20dip" android:textSize="20dip"
+					android:textColor="#ffffff" android:text=" Report a Bug" android:textStyle="bold"
+					android:gravity="left" android:background="@drawable/feedback_titlebg" />
+				<!--
+					<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/store_details_topbg"
+					android:layout_marginLeft="2dip" android:layout_marginTop="2dip"
+					android:layout_marginRight="2dip" android:orientation="vertical">
+				-->
+				<TextView android:id="@+id/reportABugDescTextView"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="20dip" android:layout_marginTop="10dip"
+					android:layout_marginRight="20dip" android:textColor="#ffffff"
+					android:layout_gravity="center" android:textSize="18dip"
+					android:text="To make the application kindly report as a bug." />
+
+				<Button android:id="@+id/report_bug_button"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginTop="20dip" android:layout_gravity="center"
+					android:textSize="18dip" android:background="@drawable/report_a_bug_btn" />
+					
+				<ImageView android:layout_width="fill_parent"
+		android:layout_height="60dip" />	
+			</LinearLayout>
+		
+	</LinearLayout>
+	<!-- 
+	<com.mocansa.Toolbar android:id="@+id/toolBar" android:layout_width="fill_parent"
+		android:layout_height="60dip" android:layout_gravity="bottom"
+		app:textViewId="option5" />
+-->
+
+</FrameLayout>

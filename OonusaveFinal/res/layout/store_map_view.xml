@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titleBarTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_bar"
+            android:text="Map View"
+            android:textColor="@color/titlebarTextColor"
+            android:textSize="20dip" />
+
+        <!-- Old Key  0nMlkjXoSaa1U8_FvjSpSVzqlarXfX-XAkRJP3g -->
+
+
+        <!--
+             com.google.android.maps.MapView
+			android:id="@+id/mapview" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:clickable="true"
+			android:apiKey="0nMlkjXoSaa0-PwrMJN_es1F7drBf7WwW7nOvBQ" /
+        -->
+
+
+        <!-- Signed Map Key -->
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--
+            com.google.android.maps.MapView android:id="@+id/mapview"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:clickable="true"
+			android:apiKey="0nMlkjXoSaa2SKNiKgQYbduFycjyr6m92PZerDQ" /
+        -->
+
+        <LinearLayout
+            android:id="@+id/zoomView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dip" />
+    </LinearLayout>
+    <!--
+     		<com.mocansa.Toolbar android:id="@+id/toolBar" android:layout_width="fill_parent"
+			android:layout_height="60dip" android:layout_gravity="bottom"
+			app:textViewId="option1" />
+    -->
+
+</FrameLayout>

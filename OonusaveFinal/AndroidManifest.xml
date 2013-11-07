@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.oonusave.coupon"
+      android:versionCode="1"
+      android:versionName="1.0">
+      <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<!--
+		<uses-permission
+		android:name="android.permission.ACCESS_MOCK_LOCATION"></uses-permission>
+		<uses-permission
+		android:name="android.permission.ACCESS_COURSE_LOCATION"></uses-permission>
+		<uses-permission
+		android:name="android.permission.ACCESS_LOCATION"></uses-permission>
+	-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_GPS"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	  <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    
+
+	<supports-screens android:largeScreens="true"
+		android:normalScreens="true" android:smallScreens="true"
+		android:anyDensity="true" />
+
+	<application android:icon="@drawable/mocansa"
+		android:label="@string/app_name" android:screenOrientation="portrait">
+		<uses-library android:name="com.google.android.maps" />
+		<activity android:name=".SplashScreen" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MyActivity"
+			android:screenOrientation="portrait" />
+		<activity android:name=".LoginScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".RegistrationScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".ShortRegistrationScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".SignUpScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait"/>
+		<activity android:name=".ShortRegistrationScreenTwo" android:theme="@style/MyTheme" android:screenOrientation="portrait"/>
+		<activity android:name=".CouponListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".MapScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".MyMap" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".MyMapStore" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".CouponDetailsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".TabContainer" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".CategoryListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".SubCategoryListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".BarcodeScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".MyWalletScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".MoreScreen1" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".StoreListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".FeedbackScreen1" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".FeedbackScreen2" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".FeedbackMainScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name="FAQsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name="FAQDetailsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name="ContactUsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name="UsedCouponScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name="ExpiryCouponsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name="SettingsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".StoreCouponListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".SubCategoryCouponListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".MapScreenTest" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".FavouriteStoresScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".TermsAndCondScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".CouponsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".UsedCouponDetailsScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".NotFoundScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".CompetionListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".UserListScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".SettingsMain" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+		<activity android:name=".CompetionMainScreen" android:theme="@style/MyTheme" android:screenOrientation="portrait" />
+
+		<meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyDR9S8MtRXQK2Wa78TzEQvdjHEHdGNuffA"/>
+    </application>
+   
+	<!-- AIzaSyA9oOPi1519zni-1V27mXR74L4e-eUSGm4  debug key -->
+<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+</manifest> 

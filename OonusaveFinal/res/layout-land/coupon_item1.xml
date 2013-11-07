@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="60dip"
+	android:orientation="horizontal" android:background="@drawable/listing_bg_new">
+
+	<ImageView android:id="@+id/couponImage"
+		android:layout_width="70dip" android:layout_marginTop="5dip"
+		android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+		android:layout_marginBottom="5dip" android:layout_height="40dip" />
+
+	<LinearLayout android:layout_width="wrap_content" android:layout_marginLeft="10dip" 
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_toRightOf="@id/couponImage">
+		<TextView android:id="@+id/couponName" android:layout_width="wrap_content"
+			android:textColor="#ffffff" android:textSize="19dip" android:textStyle="bold"
+			android:layout_height="wrap_content" android:text="" />
+		<TextView android:id="@+id/storeName" android:layout_width="wrap_content"
+			android:textColor="#ffffff" android:textSize="17dip"
+			android:layout_height="wrap_content" android:text="" />
+	</LinearLayout>
+
+	<RelativeLayout android:layout_width="70dip" android:id="@+id/kmsLayout" 
+		android:background="@drawable/km_btn" android:layout_centerVertical="true"
+		android:layout_marginTop="15dip" 
+		android:layout_marginRight="45dip" android:layout_height="wrap_content"
+		android:layout_alignParentRight="true">
+		
+		<TextView android:id="@+id/kmsText" android:layout_width="wrap_content" android:textColor="#ffffff" android:textSize="9dip" android:layout_centerVertical="true" android:layout_centerInParent="true"
+			android:layout_height="wrap_content" />
+
+	</RelativeLayout>
+	
+</RelativeLayout>
+

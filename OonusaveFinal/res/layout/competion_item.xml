@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="100dip"
+	android:orientation="horizontal" android:background="@drawable/search_bg">
+
+	<TextView android:id="@+id/competionName"
+		android:layout_width="wrap_content" android:textColor="#ffffff"
+		android:textSize="18dip" android:textStyle="bold"
+		android:layout_height="wrap_content" android:text="" />
+
+	<TextView android:id="@+id/price" android:layout_width="wrap_content"
+		android:textColor="#ffffff" android:textSize="14dip"
+		android:layout_below="@id/competionName" android:layout_height="wrap_content"
+		android:text="" />
+
+	<TextView android:id="@+id/desc" android:layout_width="wrap_content"
+		android:textColor="#ffffff" android:textSize="16dip"
+		android:layout_below="@id/price" android:layout_height="wrap_content"
+		android:text="" />
+
+</RelativeLayout>
+

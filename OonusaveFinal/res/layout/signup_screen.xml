@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tabBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/accDetailImage"
+            android:layout_width="104dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account_details_selected" />
+
+        <ImageView
+            android:id="@+id/personalDetailImage"
+            android:layout_width="104dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_details" />
+
+        <ImageView
+            android:id="@+id/notificationDetailImage"
+            android:layout_width="114dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_details" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/accLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Email ID:"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/email_text"
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/emailTextView"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/pwdTextView"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_below="@id/emailTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Password:"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/pwdTextView"
+            android:password="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/confirmPwdTextView"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_below="@id/pwdTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Confirm Password:"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/con_password_text"
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwdTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/confirmPwdTextView"
+            android:password="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/con_password_text"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/signup_continue_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/perLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/nickNameTextView"
+            android:layout_width="90dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Nick Name:"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/nick_name_text"
+            android:layout_width="230dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/nickNameTextView"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="90dip"
+            android:layout_height="50dip"
+            android:layout_below="@id/nickNameTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Gender:"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <RadioGroup
+            android:id="@+id/widget1"
+            android:layout_width="230dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nick_name_text"
+            android:layout_toRightOf="@id/genderTextView"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/widget2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:checked="false"
+                android:drawableRight="@drawable/radio_btn_male" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/widget3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:checked="true"
+                android:drawableRight="@drawable/radio_btn_female"
+                android:typeface="serif" >
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/ageTextView"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_below="@id/genderTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Age:"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/widget1"
+            android:layout_toRightOf="@id/ageTextView"
+            android:max="100"
+            android:progress="10" />
+
+        <TextView
+            android:id="@+id/seekbarTextView"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/widget1"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/seekbar"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/postCodeTextView"
+            android:layout_width="90dip"
+            android:layout_height="50dip"
+            android:layout_below="@id/ageTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Post Code:"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/post_code_text"
+            android:layout_width="230dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ageTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/postCodeTextView"
+            android:numeric="decimal"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/back_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/postCodeTextView"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/continue_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/postCodeTextView"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/signup_continue_btn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/notificationScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/notiLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="66dip"
+                android:layout_below="@id/listView"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tandcTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes I have read and i accept mocansa terms and conditions"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" >
+                </TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/back_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/layout1"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/back" />
+
+            <Button
+                android:id="@+id/finish_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/layout1"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/finish_btn" />
+        </RelativeLayout>
+    </ScrollView>
+
+        <!-- </LinearLayout> -->
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:scrollbars="none">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res/com.oonusave.coupon"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/login_bg">
+
+
+		<!--
+			<ImageView android:id="@+id/iconImage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="2dip" android:src="@drawable/icon" />
+		-->
+
+
+
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_marginTop="2dip" android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true">
+
+			<ImageView android:id="@+id/iconImage" android:layout_marginTop="80dip"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true" android:layout_marginLeft="10dip"  
+				android:src="@drawable/login_image" />
+
+			<!--
+				<TextView android:id="@+id/loginTitleTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#ffffff"
+				android:textSize="20dip" android:layout_gravity="center"
+				android:textStyle="bold" android:text="Login" />
+			-->
+			<!--
+				<TextView android:id="@+id/text" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#ffffff"
+				android:textSize="15px" android:layout_gravity="center"
+				android:text="username:" />
+			-->
+			<EditText android:id="@+id/txt_username"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_centerHorizontal="true" android:singleLine="true"
+				android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+				android:text="ramesh_cse@rediffmail.com" />
+			<!--
+				<TextView android:id="@+id/text1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#ffffff"
+				android:textSize="15px" android:layout_centerInParent="true"
+				android:layout_below="@id/txt_username" android:text="password:" />
+			-->
+			<EditText android:id="@+id/txt_password" android:password="true"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:text="ramesh" android:layout_gravity="center"
+				android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+				android:singleLine="true" />
+
+
+			<RelativeLayout android:id="@+id/layout0"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_below="@id/txt_password" android:orientation="horizontal">
+				<TextView android:id="@+id/rememberPassTextView"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="16dip"
+					android:layout_marginTop="10dip" android:textStyle="bold"
+					android:layout_marginLeft="15dip" android:layout_gravity="left"
+					android:text="Remember My Password" />
+
+				<CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:layout_gravity="right" android:gravity="right"
+					android:layout_alignParentRight="true" android:layout_marginRight="5dip"
+					android:textSize="18dip" />
+
+			</RelativeLayout>
+
+			<RelativeLayout android:id="@+id/layout"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_below="@id/layout0" android:orientation="horizontal">
+				<TextView android:id="@+id/forgotPassTextView"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#ffffff" android:textSize="16dip"
+					android:textStyle="bold" android:layout_marginLeft="15dip"
+					android:layout_gravity="left" android:text="Forgot your password ?" />
+
+				<Button android:id="@+id/login_button" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="right"
+					android:gravity="right" android:layout_alignParentRight="true"
+					android:layout_marginRight="5dip" android:background="@drawable/login_btn1" />
+
+			</RelativeLayout>
+
+			
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_marginTop="50dip">
+				
+				<Button android:layout_width="wrap_content" android:id="@+id/signup_button"
+					android:gravity="center_horizontal" android:layout_marginTop="1dip" android:layout_marginLeft="3dip"
+					android:background="@drawable/new_usersignup"
+					android:layout_height="wrap_content"></Button>
+
+				<!--
+					<TextView android:text="Click here to take a tour"
+					android:id="@+id/demoUserTxt" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="16dip"
+					android:textStyle="bold"
+					android:layout_marginLeft="10dip"></TextView>
+				-->
+
+				<Button android:layout_width="wrap_content" android:id="@+id/demouser_button"
+					android:gravity="center_horizontal" android:layout_marginTop="4dip" android:layout_marginLeft="3dip"
+					android:background="@drawable/test_drive_btn"
+					android:layout_height="wrap_content"></Button>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+</ScrollView>
+	<!--
+		<com.technova.Toolbar android:layout_width="fill_parent"
+		android:layout_height="70dip" android:layout_gravity="bottom"
+		app:textViewId="option1"/>
+	-->	    

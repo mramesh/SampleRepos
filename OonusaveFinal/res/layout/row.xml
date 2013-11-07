@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+        
+<LinearLayout android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@drawable/main_bg" >
+   
+   <TextView android:id="@+id/titleBarTextView"
+    	android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:textSize="18dip"
+		android:textColor="#ffffff"
+		android:text="Coupons List"
+		android:background="@drawable/title_bar"
+	/>
+	<LinearLayout android:background="@drawable/search_bg"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   >
+   <EditText android:id="@+id/searchText" android:layout_width="250dip"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="2dip"
+   android:layout_marginLeft="2dip"
+   android:layout_marginRight="2dip"
+   android:layout_marginBottom="2dip"
+   android:hint="Search"
+   android:singleLine="true"
+   >
+    </EditText>
+   <Button android:id="@+id/submit_button" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+			android:layout_gravity="center"
+		android:layout_marginTop="1dip"
+		android:layout_marginLeft="5dip"
+		android:background="@drawable/submit"/>
+    </LinearLayout>
+    
+    
+   
+<ListView
+    android:id="@+id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="60dip"
+    />
+    <!-- <ImageView android:layout_width="fill_parent"
+		android:layout_height="100dip"/>
+   <Button android:id="@+id/cancel_button1" android:layout_width="wrap_content"
+		android:layout_height="100dip"
+		android:layout_gravity="center"
+		android:layout_marginTop="2dip"
+		android:layout_marginLeft="5dip"
+		android:background="@drawable/cancel_button"/>
+    -->
+</LinearLayout>  
+<!-- 
+ <com.mocansa.Toolbar 
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dip"
+	    android:layout_gravity="bottom"
+	    app:textViewId="option1"/>
+	    -->
+ </FrameLayout>
+

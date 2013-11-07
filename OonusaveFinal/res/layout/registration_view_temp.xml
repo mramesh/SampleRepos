@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/main_bg">
+
+
+	<TextView android:id="@+id/titleBarTextView"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textSize="18dip" android:textColor="#ffffff" android:text="Edit Profile"
+		android:background="@drawable/title_bar" />
+
+
+
+
+	<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip" android:scrollbars="none">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+
+			<TableLayout android:layout_width="fill_parent"
+				android:stretchColumns="true" android:layout_height="wrap_content"
+				android:layout_marginRight="0dip" android:layout_marginTop="20dip">
+				<TableRow android:layout_width="fill_parent">
+					<TextView android:id="@+id/text" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="First Name:     "
+						android:textColor="#ffffff" android:textSize="15px" />
+					<EditText android:id="@+id/fname_text"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:layout_centerHorizontal="true" android:singleLine="true" />
+				</TableRow>
+
+				<TableRow>
+
+					<TextView android:id="@+id/text" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:textSize="15px" android:text="Last Name:       " />
+					<EditText android:id="@+id/lname_text"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:layout_centerHorizontal="true" android:singleLine="true" />
+
+				</TableRow>
+
+
+				<TableRow>
+					<TextView android:id="@+id/gender" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:textSize="15px" android:text="Gender:          " />
+					<Spinner android:id="@+id/gender_spinner"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:layout_centerHorizontal="true" android:singleLine="true" />
+				</TableRow>
+
+
+				<TableRow>
+					<TextView android:id="@+id/dob" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:textSize="15px" android:text="Date Of Birth:      " />
+					<EditText android:id="@+id/birthDateText"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:singleLine="true" />
+					<Button android:id="@+id/btnSelectDate"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_toRightOf="@+id/txtBithDate" android:text="..." />
+				</TableRow>
+
+
+
+				<TableRow>
+
+					<TextView android:id="@+id/text" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:textSize="15px" android:text="Alert Email:        " />
+					<CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" />
+
+				</TableRow>
+
+				<TableRow>
+
+					<TextView android:id="@+id/text" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:textSize="15px" android:text="Alt Email:       " />
+					<EditText android:id="@+id/email_text"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:layout_centerHorizontal="true" android:singleLine="true" />
+
+				</TableRow>
+
+				<!--
+
+					<TableRow> <TextView android:id="@+id/address1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:textSize="15px" android:text="Contact Number:" /> <EditText
+					android:id="@+id/mobileNumberText"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+					</TableRow> <TableRow> <TextView android:id="@+id/text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:textSize="15px" android:text="City:" /> <EditText
+					android:id="@+id/city_text" android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+
+					</TableRow> <TableRow> <TextView android:id="@+id/text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:textSize="15px" android:text="State:" /> <EditText
+					android:id="@+id/state_text" android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+					</TableRow> <TableRow> <TextView android:id="@+id/text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ffffff"
+					android:textSize="15px" android:text="Country:" /> <Spinner
+					android:id="@+id/country_spinner"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:layout_centerHorizontal="true" android:singleLine="true" />
+
+					</TableRow>
+				-->
+
+				<TableRow>
+				
+				
+				
+				<Button android:id="@+id/submit_button" android:layout_width="wrap_content"
+				android:layout_gravity="right" android:layout_marginRight="10dip"
+				android:layout_marginTop="20dip" android:layout_height="wrap_content"
+				android:background="@drawable/submit" />
+				
+				</TableRow>
+			</TableLayout>
+			
+			
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

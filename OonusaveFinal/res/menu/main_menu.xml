@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/category"
+          android:icon="@drawable/ic3"
+          android:title="Category" />
+          
+    <item android:id="@+id/fav"
+    android:icon="@drawable/ic2"
+          android:title="Favorite" />
+    <item android:id="@+id/map"
+    android:icon="@drawable/ic1"
+          android:title="Map" />
+          
+    <item android:id="@+id/mywallet"
+    android:icon="@drawable/ic4"
+          android:title="My Wallet" />
+    <item android:id="@+id/more"
+    android:icon="@drawable/ic5"
+          android:title="More" />      
+          
+</menu>

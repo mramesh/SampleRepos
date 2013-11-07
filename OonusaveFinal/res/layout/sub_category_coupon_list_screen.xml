@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg">
+        
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   >
+   <TextView android:id="@+id/titleBarTextView"
+    	android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:textSize="18dip"
+		android:textColor="@color/titlebarTextColor"
+		android:text="Coupons List"
+		android:background="@drawable/title_bar"
+	/>
+	 
+<ListView
+    android:id="@+id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="60dip"
+    />
+    
+   
+    
+</LinearLayout>  
+<!-- 
+ <com.mocansa.Toolbar android:id="@+id/toolBar" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dip"
+	    android:layout_gravity="bottom"
+	    app:textViewId="option2"/>
+	-->    
+ </FrameLayout>
+

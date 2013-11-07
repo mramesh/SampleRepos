@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_marginTop="2dip" android:layout_height="wrap_content"
+			android:background="@drawable/title_bar">
+			<TextView android:id="@+id/titleBarTextView"
+				android:layout_gravity="left" android:gravity="left"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="18dip" android:textColor="@color/titlebarTextColor"
+				android:text=" Settings" />
+		</RelativeLayout>
+
+
+		<RelativeLayout android:layout_width="fill_parent" android:id="@+id/generalLayout"
+			android:layout_marginTop="30dip" android:layout_height="wrap_content"
+			android:background="@drawable/genaral_btnbg"
+			android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+
+			<ImageView android:id="@+id/image1" android:layout_width="70dip"
+				android:layout_height="70dip">
+			</ImageView>
+
+			<TextView android:id="@+id/settingsGeneralTitle"
+				android:layout_toRightOf="@id/image1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="18dip"
+				android:textColor="#0066CC" android:text="General" android:textStyle="bold"/>
+
+			<TextView android:id="@+id/settingsGeneralDesc"
+				android:layout_toRightOf="@id/image1" android:layout_below="@id/settingsGeneralTitle"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="14dip" android:textColor="#000000" android:text="Manage Language, Radius KM, push notification, Category List" />
+
+		</RelativeLayout>
+
+
+
+		<RelativeLayout android:layout_width="fill_parent" android:id="@+id/profileLayout"
+			android:layout_marginTop="20dip" android:layout_height="wrap_content"
+			android:background="@drawable/profile_btnbg" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+
+
+			<ImageView android:id="@+id/image1" android:layout_width="70dip"
+				android:layout_height="70dip">
+			</ImageView>
+			<TextView android:id="@+id/settingsProfileTitle"
+				android:layout_toRightOf="@id/image1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="18dip"
+				android:textColor="#0066CC" android:text="Profile" android:textStyle="bold"/>
+
+			<TextView android:id="@+id/settingsProfileDesc"
+				android:layout_toRightOf="@id/image1" android:layout_below="@id/settingsProfileTitle"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="14dip" android:textColor="#000000" android:text="Manage Language, Radius KM, push notification, Category List" />
+
+		</RelativeLayout>
+
+
+
+	</LinearLayout>
+
+<!-- 	<com.mocansa.Toolbar android:id="@+id/toolBar"
+		android:layout_width="fill_parent" android:layout_height="60dip"
+		android:layout_gravity="bottom" app:textViewId="option5" />
+		
+-->		
+</FrameLayout>
+   

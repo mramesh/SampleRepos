@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginBottom="60dip">
+	<TextView android:id="@+id/titleBarTextView" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="18dip"
+		android:textColor="@color/titlebarTextColor" android:text="More" android:background="@drawable/title_bar" />
+
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+		<GridView android:id="@+id/grid_view" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:cacheColorHint="#00000000"
+			android:layout_gravity="center" android:layout_centerInParent="true"
+			android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+			android:numColumns="auto_fit" android:columnWidth="60dip"
+			/>
+
+		<!-- android:listSelector="@android:color/transparent" -->
+
+	</RelativeLayout>
+	</LinearLayout>
+		<!-- 
+	<com.mocansa.Toolbar android:id="@+id/toolBar" android:layout_width="fill_parent"
+		android:layout_height="60dip" android:layout_gravity="bottom"
+		app:textViewId="option5" />
+		-->
+</FrameLayout>

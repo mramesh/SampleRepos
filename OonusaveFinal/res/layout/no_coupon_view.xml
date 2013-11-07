@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+
+	<ImageButton android:id="@+id/notFoundImage"
+		android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent" android:layout_marginTop="5dip"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+		android:layout_marginBottom="60dip" android:layout_height="fill_parent"
+		android:background="@drawable/coupon_notfound" />
+<!-- 
+<com.mocansa.Toolbar android:id="@+id/toolBar" android:layout_width="fill_parent"
+		android:layout_height="60dip" android:layout_gravity="bottom"
+		app:textViewId="option4" />
+-->
+</FrameLayout>
+

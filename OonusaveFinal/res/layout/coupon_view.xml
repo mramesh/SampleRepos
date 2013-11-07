@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.mocansa"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/main_bg">
+
+	<LinearLayout
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:id="@+id/titleBarTextView"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="18dip" android:textColor="@color/titlebarTextColor" android:text="Expiry Coupon"
+			android:background="@drawable/title_bar" />
+		<LinearLayout android:background="@drawable/search_bg"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<EditText android:id="@+id/searchText" android:layout_width="250dip"
+				android:layout_height="wrap_content" android:layout_marginTop="2dip"
+				android:layout_marginLeft="2dip" android:layout_marginRight="2dip"
+				android:layout_marginBottom="2dip" android:hint="Search"
+				android:singleLine="true">
+			</EditText>
+			<Button android:id="@+id/submit_button" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:layout_marginTop="1dip" android:layout_marginLeft="5dip" android:layout_marginRight="2dip"
+				android:background="@drawable/submit" />
+		</LinearLayout>
+
+		<ListView android:id="@+id/android:list"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginBottom="60dip" />
+
+
+	</LinearLayout>
+
+	<!-- <com.mocansa.Toolbar android:id="@+id/toolBar" android:layout_width="fill_parent"  
+		android:layout_height="60dip" android:layout_gravity="bottom"
+		app:textViewId="option1" />
+		
+		-->
+
+</FrameLayout>
+
+	<!--
+		<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" > <TextView
+		android:id="@+id/list_value" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" /> <Button
+		android:id="@+id/button" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Login" />
+		</LinearLayout>
+	-->  

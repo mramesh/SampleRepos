@@ -1,0 +1,66 @@
+<merge 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content" 
+     android:background="@drawable/footer_bg"
+     android:layout_gravity="bottom" 
+     >  
+     
+	<ImageButton android:id="@+id/option1"
+        android:layout_height="50dip" 
+        android:layout_width="80dip"	 
+        android:text="home" 
+        android:textSize="10dip" 
+		android:textStyle="bold" 
+		android:textColor="@drawable/text_states" 
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/titlebackgroundcolor" 
+        android:drawableTop="@drawable/home" 
+        android:gravity="center"
+        android:layout_weight="1"/>
+        
+	<ImageButton android:id="@+id/option2"
+        android:layout_height="50dip" 
+        android:layout_width="80dip"	 
+        android:text="browse" 
+        android:textSize="10dip" 
+		android:textStyle="bold" 
+		android:textColor="@drawable/text_states" 
+        android:clickable="true"
+        android:focusable="true" 
+        android:background="@drawable/backgound_states" 
+        android:drawableTop="@drawable/browse" 
+        android:gravity="center" 
+        android:layout_weight="1"/>
+
+	<ImageButton android:id="@+id/option3"
+        android:layout_height="50dip" 
+        android:layout_width="80dip"	 
+        android:text="my wallet" 
+        android:textSize="10dip" 
+		android:textStyle="bold" 
+		android:textColor="@drawable/text_states" 
+        android:clickable="true"
+        android:focusable="true" 
+        android:background="@drawable/backgound_states" 
+        android:drawableTop="@drawable/my_wallet" 
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+	<ImageButton android:id="@+id/option4"
+        android:layout_height="50dip" 
+        android:layout_width="80dip"	 
+        android:text="more" 
+        android:textSize="10dip" 
+		android:textStyle="bold" 
+		android:textColor="@drawable/text_states" 
+        android:clickable="true"
+        android:focusable="true" 
+        android:background="@drawable/backgound_states" 
+        android:drawableTop="@drawable/more" 
+        android:gravity="center"
+        android:layout_weight="1"/>
+</LinearLayout>
+</merge>
