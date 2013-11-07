@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:layout_width="fill_parent"
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.oonusave.coupon"
 	android:layout_height="wrap_content" android:scrollbars="none">
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		xmlns:app="http://schemas.android.com/apk/res/com.oonusave.coupon"
+	<RelativeLayout 
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		android:background="@drawable/login_bg">
 
@@ -99,7 +99,7 @@
 
 			<LinearLayout android:layout_width="fill_parent"
 				android:layout_height="wrap_content" android:orientation="vertical"
-				android:gravity="center_horizontal" android:layout_marginTop="50dip">
+				android:gravity="center_horizontal" android:layout_marginTop="30dip">
 				
 				<Button android:layout_width="wrap_content" android:id="@+id/signup_button"
 					android:gravity="center_horizontal" android:layout_marginTop="1dip" android:layout_marginLeft="3dip"

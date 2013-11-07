@@ -154,8 +154,11 @@ public class MyMapStore extends BaseMapActivity implements OnClickListener{
 			}
 			double curr_lat = formatFraction(location.getLatitude());
 			double curr_longi = formatFraction(location.getLongitude());
-			DataUtil.locationInfo.setLatitude(curr_lat+"");
-			DataUtil.locationInfo.setLongitude(curr_longi+"");
+//			DataUtil.locationInfo.setLatitude(curr_lat+"");
+//			DataUtil.locationInfo.setLongitude(curr_longi+"");
+			
+			DataUtil.locationInfo.setLatitude("17.993428");
+			DataUtil.locationInfo.setLongitude("-76.794491");
 			Toast.makeText(getApplicationContext(), "Location Changed == > " + curr_lat + " : " + curr_longi, Toast.LENGTH_LONG).show();
 			new LoadStoresAsyncTask().execute("");
 		}catch(Exception e) {
